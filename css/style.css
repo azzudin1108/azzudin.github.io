@@ -47,7 +47,7 @@ p {
 
 /* Responsive */
 @media (min-width: 992px) {
-    #home {
+    .height-responsive {
         height: 100vh;
     }
 }
