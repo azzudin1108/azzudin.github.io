@@ -1,0 +1,70 @@
+:root {
+    --primary: #222831;
+    --secondary: #393E46;
+    --text-1: #00ADB5;
+    --text-2: #EEEEEE;
+    --nunito: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--text-2);
+    font-family: var(--nunito);
+}
+
+.slide-in-right {
+    animation: slide-in-right 1.5s ease 1s 1 alternate forwards;
+    position: relative;
+    left: 100%;
+}
+
+.slide-in-left {
+    animation: slide-in-left 1.5s ease 1s 1 alternate forwards;
+    position: relative;
+    right: 100%;
+}
+
+.slide-in-center {
+    animation: slide-in-center 1.5s ease 1s 1 alternate forwards;
+    position: relative;
+    transform: scaleX(0);
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+    #home {
+        height: 100vh;
+    }
+}
+
+
+/* Animasi */
+@keyframes slide-in-right {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slide-in-center {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
