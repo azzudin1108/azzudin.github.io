@@ -45,6 +45,10 @@ p {
     transform: scaleX(0);
 }
 
+.kedip {
+    animation: kedip 2s ease infinite alternate;
+}
+
 /* Responsive */
 @media (min-width: 992px) {
     .height-responsive {
@@ -81,5 +85,15 @@ p {
 
     100% {
         transform: scaleX(1);
+    }
+}
+
+@keyframes kedip {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
