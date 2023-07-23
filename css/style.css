@@ -12,6 +12,21 @@ body {
     font-family: var(--nunito);
 }
 
+h1,
+p {
+    cursor: default;
+}
+
+.card {
+    transition: .3s;
+    transform: scale(1);
+}
+
+.card:hover {
+    filter: brightness(.8);
+    transform: scale(1.1);
+}
+
 .slide-in-right {
     animation: slide-in-right 1.5s ease 1s 1 alternate forwards;
     position: relative;
